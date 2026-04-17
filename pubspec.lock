@@ -714,7 +714,7 @@ packages:
   oore_flutter:
     dependency: "direct main"
     description:
-      path: "../oore_flutter"
+      path: oore_package
       relative: true
     source: path
     version: "1.0.0"
