@@ -1,0 +1,79 @@
+name: oore_go
+description: Oore Go — Industrial mobile launcher for sovereign local Flutter development.
+version: 1.0.0+1
+publish_to: 'none'
+
+environment:
+  sdk: ">=3.11.5 <4.0.0"
+  flutter: ">=3.41.7"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Oore SDK & Protocol
+  oore_flutter:
+    path: ./oore_package
+
+  # dart_eval runtime
+  flutter_eval: ^0.8.2
+  dart_eval: ^0.8.4
+
+  # Networking
+  web_socket_channel: ^3.0.1
+
+  # QR scanning
+  mobile_scanner: ^7.2.0
+
+  # Storage
+  flutter_secure_storage: ^10.0.0
+
+  # Crypto
+  crypto: ^3.0.6
+  archive: ^4.0.9
+
+  # Pre-bundled plugin bridges
+  camera: ^0.12.0
+  local_auth: ^3.0.1
+  image_picker: ^1.2.1
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.5
+  connectivity_plus: ^7.1.1
+  package_info_plus: ^9.0.1
+  url_launcher: ^6.3.2
+  permission_handler: ^12.0.1
+
+  # State / Navigation
+  provider: ^6.1.2
+  go_router: ^17.2.1
+
+  # Utilities
+  uuid: ^4.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  integration_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "icons/logo512.png"
+  min_sdk_android: 21 # android min sdk min:16, default:21
+
+dependency_overrides:
+  collection: 1.18.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+  fonts:
+    - family: SpaceMono
+      fonts:
+        - asset: assets/fonts/SpaceMono-Regular.ttf
+        - asset: assets/fonts/SpaceMono-Bold.ttf
+          weight: 700
